@@ -30,7 +30,6 @@
               "src/styles.css"
             ],
             "scripts": [],
-            "thisNote":"注意: 这是添加访问前缀, 如 http://xxx.com/admin/xxx, admin就是下面的值",
             "baseHref": "/",
             "deployUrl":"/"
           },

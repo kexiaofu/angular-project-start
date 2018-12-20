@@ -5,7 +5,7 @@ import {RouterModule} from '@angular/router';
 import { appRoutes, AuthService} from './app.router';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateService, TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
@@ -32,7 +32,7 @@ export const createTranslateLoader = (http: HttpClient) => {
       }
     })
   ],
-  providers: [AuthService, HttpClient, {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [TranslateService, AuthService, HttpClient, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

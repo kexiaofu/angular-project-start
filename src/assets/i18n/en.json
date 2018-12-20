@@ -1,0 +1,6 @@
+{
+  "test": {
+    "test": "Test{{who}}",
+    "who": "Liang"
+  }
+}
