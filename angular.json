@@ -8,7 +8,11 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component":{
+          "styleext": "less"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -25,7 +29,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "thisNote":"注意: 这是添加访问前缀, 如 http://xxx.com/admin/xxx, admin就是下面的值",
+            "baseHref": "/",
+            "deployUrl":"/"
           },
           "configurations": {
             "production": {
